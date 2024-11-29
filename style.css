@@ -1,0 +1,291 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display:contents;
+    height: 100vh;
+    position: fixed;
+  margin-top: 10px;
+}
+
+
+
+/* Navbar styling */
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow to the sidebar */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+   
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 1%;
+}
+p{
+    font-size: 24px;
+    font-weight: bold;
+    align-items: start;
+    margin-right: 20%;
+    border: 2px solid #000; /* Adds a black border of 2px */
+    border-radius:10px ;
+    padding: 5px ;
+    background-color: black;
+   color: #f9f9f9;
+}
+
+
+/* Search bar container */
+.search-bar {
+    position: relative;
+    display: block;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 100px;
+    background-color: #f9f9f9;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 1%;
+    width: 450px;
+    padding-left: 30px; /* Space for the icon */
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    left: 10px;
+    color: #aaa;
+    font-size: 18px;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+}
+
+p1{
+    margin-right: 20px;
+    margin-left: 28px;
+    font-size: 18px;
+}
+
+.bi{
+    margin: 8px;
+}
+
+
+
+
+/* Sidebar styling */
+.sidebar {
+    width: 95px;
+    background-color: #021930; /* Blue background */
+    height: 100vh; /* Full height */
+    position:fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+}
+
+/* Sidebar list */
+.sidebar ul {
+    list-style-type: none;
+}
+
+/* Sidebar list items */
+.sidebar li {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+   
+}
+
+/* Sidebar links */
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    align-items: center;
+    
+}
+
+/* Sidebar icons */
+.sidebar a svg {
+    margin-right: 20px; /* Add space between icon and text */
+    font-size: 25px;
+   
+}
+
+/* Hover effect for links */
+.sidebar a:hover {
+    background-color:grey;
+    color: #021930;
+   
+}
+
+
+h1 {
+    margin: 50px;
+    margin-left: 150px; /* Make room for the sidebar */
+    padding: 20px;
+    width: 100%;    
+    height:85vh; /* Full height */
+    position:fixed;
+
+}
+p3{
+    margin: 90px;
+    margin-left: 150px;  /* Make room for the sidebar */
+    padding: 20px;
+    width: 100%;    
+    height: 75vh; /* Full height */
+    position:fixed;
+    font-size: 1.2em;
+    color: gray;
+}
+  
+
+.card-container {
+    margin-top: 120px;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 55px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 80%;
+}
+
+.card {
+   
+    width: 275px;
+    height: 165px;
+    background: linear-gradient(to bottom right, #3498db, #8e44ad); /* Linear gradient */
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Positioning context for absolute positioning of the text */
+}
+
+/* Circle around icon */
+.icon-circle {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.icon-circle i {
+    font-size: 30px;
+    color: #3498db;
+}
+
+/* Styling for the <p> element */
+.card-text {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #f9f9f9;
+    margin-bottom: 5px;
+    
+}
+
+/* Align "Home" to the left */
+.home-text {
+    text-align: left;
+}
+
+/* Align "14" to the right */
+.number {
+    text-align: right;
+}
+
+
+.card-container-one {
+    
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+   gap: 75px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 80%; 
+}
+.card1 {
+    width: 150px;
+    height: 160px;
+    background-color:#f9f9f9; /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    grid-gap:0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+} 
+
+
+
+/* Circle around icon */
+.icon-circle-one {
+    width: 80px; /* Size of the circle */
+    height: 80px; /* Size of the circle */
+    background-color:#3498db; /* Circle color */
+    border-radius: 50%; /* Make it round */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+/* Icon styling */
+.icon-circle-one i {
+    font-size: 25px; /* Icon size */
+    color:white; /* Icon color */
+}
+
+.card-container-one p4{
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
